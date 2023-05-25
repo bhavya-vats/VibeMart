@@ -7,12 +7,12 @@ import ProductList from './components/ProductList';
 function App() {
   const productList = [
     {
-      price: 9999,
-      name:"Iphone 12",
+      price: 999999,
+      name:"Iphone 14 Pro",
       quantity:0,
     },
     {
-      price: 99999,
+      price: 9999,
       name:"Redmi Note 10",
       quantity:0,
     },
@@ -20,7 +20,9 @@ function App() {
   return (
     <>
     <Navbar/>
+    <main className='container mt-5'>
     <ProductList productList={productList}/>
+    </main>
     <Footer/>
     </>
   );
