@@ -5,7 +5,7 @@ import ProductList from './components/ProductList';
 
 
 function App() {
-  const product = [
+  const productList = [
     {
       price: 9999,
       name:"Iphone 12",
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <Navbar/>
-    <ProductList/>
+    <ProductList productList={productList}/>
     <Footer/>
     </>
   );
