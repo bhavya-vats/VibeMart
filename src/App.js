@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
-
+import React, { useState } from 'react';
 
 function App() {
   const productList = [
@@ -17,6 +17,14 @@ function App() {
       quantity:0,
     },
   ]
+
+  let [productList , setProductList] = useState(products)
+
+  function incrementQuantity(index){
+    let newProductList = [...productList]
+    newProductList[index].quantity++
+    setProductList(newProductList);
+  }
   return (
     <>
     <Navbar/>
