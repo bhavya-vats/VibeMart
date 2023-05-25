@@ -1,11 +1,9 @@
-class ProductList extends React.Component {
-    state = {  } 
-    render() { 
-        return (
-            <>
-            </>
-        );
-    }
+import React from 'react'
+
+export default function ProductList() {
+  return (
+    <div>
+      
+    </div>
+  )
 }
- 
-export default ProductList;
